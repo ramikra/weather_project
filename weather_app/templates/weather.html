@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Report</title>
+</head>
+<body>
+    <h1>Weather Report for {{ weather.location }}</h1>
+    <p>Temperature: {{ weather.temperature }}°C</p>
+    <p>Humidity: {{ weather.humidity }}%</p>
+    <p>Description: {{ weather.description }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<head><title>Login - Weather information</title></head>
+<body>
+    <h2>Login</h2>
+    <form method="post">
+        {% csrf_token %}
+        Username: <input type="text" name="username"><br>
+        Password: <input type="password" name="password"><br>
+        <input type="submit" value="Login">
+        {% if error %}
+            <p><strong>{{ error }}</strong></p>
+        {% endif %}
+    </form>
+</body>
+</html>
